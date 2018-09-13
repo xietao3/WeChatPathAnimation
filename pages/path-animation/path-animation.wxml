@@ -1,0 +1,6 @@
+<!--pages/PathAnimation/path-animation.wxml-->
+<view class="base-button" bindtap="tapChooseAction">调整路径</view>
+<view class='bezier-background'>
+  <canvas canvas-id="heart-path" class='heart-path'/>
+  <canvas canvas-id="heart-shape" class='heart-canvas'/>
+</view>

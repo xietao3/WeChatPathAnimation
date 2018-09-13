@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="base-button" wx:for="{{titles}}" wx:key="title" catchtap="tapTitleAction" data-index="{{index}}">{{item}}</view>
+</view>

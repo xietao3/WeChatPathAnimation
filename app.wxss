@@ -1,0 +1,16 @@
+/**app.wxss**/
+.base-button {
+    position: relative;
+    width: calc(100% - 40rpx);
+    margin: 20rpx 20rpx 0 20rpx;
+    height: 88rpx; 
+    line-height: 88rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    border: 2rpx solid #DCDCDC;
+    color: #3A3A3A;
+}
+
+.base-button:active {
+    opacity: 0.5;
+}
