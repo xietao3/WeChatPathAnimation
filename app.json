@@ -2,12 +2,15 @@
   "pages": [
     "pages/index/index",
     "pages/path-animation/path-animation",
-    "pages/bezier-curve/bezier-curve"
+    "pages/bezier-curve/bezier-curve",
+    "pages/timing-function/timing-function",
+    "pages/timing-function-example/timing-function-example"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

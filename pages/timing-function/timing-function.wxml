@@ -1,7 +1,9 @@
-<!--pages/bezier-curve/bezier-curve.wxml-->
+<!--pages/timing-function/timing-function.wxml-->
 
 <view class="touch-view" bindtouchstart="touchStartEvent" bindtouchmove="touchMoveEvent" bindtouchcancel="touchCancelEvent" bindtouchend="touchEndEvent">
+  <canvas canvas-id="chart" class='chart'/>
   <canvas canvas-id="oringin-points" class='oringin-points-view' />
-  <canvas canvas-id="bezier-points" class='bezier-points-view' />
+  <canvas canvas-id="chart-curve" class='chart-curve'/>
 </view>
-<view wx:if="{{showChooseButton}}" class="base-button" bindtap="tapChooseAction">选择该路径</view>
+<view class="base-button" bindtap="tapChooseAction">调整路径</view>
+

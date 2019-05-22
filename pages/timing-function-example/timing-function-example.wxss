@@ -1,0 +1,12 @@
+/* pages/timing-function-example/timing-function-example.wxss */
+page{
+  height: 100%;
+}
+
+.moving-rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

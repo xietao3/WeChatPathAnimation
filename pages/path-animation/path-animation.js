@@ -86,18 +86,19 @@ Page({
       var angle = 0;
 
       requestAnimationFrame(() => {
-        if (progress >= duration-1) {
+        if (!this.pathPoints[progress] || !this.pathPoints[progress + 1] || progress >= duration-2) {
           cancelAnimationFrame();
+          return;
         } else {
-          progress += 1
           angle = getAngleFromPoints(this.pathPoints[progress], this.pathPoints[progress + 1])
+          progress += 1
+
         }
         let currentPoint = this.pathPoints[progress]
         const ctx = wx.createCanvasContext('heart-shape')
-        let radius = 25;
-        console.log(angle)
-        ctx.rotate(20 * Math.PI / 180)
-        ctx.drawImage(filePath, 0, 0, 100, 80, currentPoint.x - radius, currentPoint.y - radius, 50, 40)
+        ctx.translate(currentPoint.x, currentPoint.y)
+        ctx.rotate(angle + Math.PI/2)
+        ctx.drawImage(filePath, 0, 0, 100, 80, -25,  -20, 50, 40)
         ctx.draw()  
       })
 
@@ -106,10 +107,8 @@ Page({
 
   drawHeartPath(pathPoints) {
     const ctx = wx.createCanvasContext('heart-path')
-    ctx.rotate(20 * Math.PI / 180)
-
+    // ctx.rotate(20 * Math.PI / 180)
     CanvasHelper.drawLine(ctx, pathPoints, 'gray')
-
     ctx.draw()
   }
 })

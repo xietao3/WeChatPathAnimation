@@ -1,0 +1,3 @@
+<!--pages/timing-function-example/timing-function-example.wxml-->
+  <canvas canvas-id="moving-rect" class='moving-rect'/>
+<view class="base-button" bindtap="tapChooseAction">调整路径</view>

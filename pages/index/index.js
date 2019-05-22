@@ -22,6 +22,11 @@ Page({
           url: '/pages/path-animation/path-animation'
         })
         break;
+      case 2:
+        wx.navigateTo({
+          url: '/pages/timing-function/timing-function'
+        })
+        break;
     
       default:
         break;
