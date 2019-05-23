@@ -24,7 +24,7 @@ Page({
         break;
       case 2:
         wx.navigateTo({
-          url: '/pages/timing-function/timing-function'
+          url: '/pages/timing-function-example/timing-function-example'
         })
         break;
     
