@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    titles: ["1", "2", "3"]
+    titles: ["绘制贝塞尔曲线", "自定义动画路径", "自定义动画速度曲线"]
   },
   onLoad: function () {
     
